@@ -1,0 +1,182 @@
+/* Grids and so on */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/** global elements, such as header and footer **/
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding: 2%;
+  margin: 0 0 1vw;
+}
+
+.logo {
+  width: 80px;
+}
+
+.nav-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+}
+
+.nav a,
+#dropdown {
+  text-decoration: none;
+  list-style: none;
+}
+
+#dropdown {
+  min-width: 10%;
+}
+
+#dropdown a {
+  display: block;
+  padding: 10px;
+}
+
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+/** about page **/
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.img-container {
+  z-index: 1;
+}
+
+.name-container {
+  grid-column: 2/-1;
+  grid-row: 1;
+  align-self: center;
+  font-size: calc(30px + 0.390625vw);
+}
+
+.underline-name-container {
+  width: calc(280px + 0.390625vw);
+}
+
+.assets-container,
+.about-main {
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+.assets-container {
+  position: relative;
+  height: 100%;
+}
+.assets {
+  width: 30px;
+}
+
+.asset1 {
+  position: absolute;
+  left: 200px;
+}
+
+.asset2 {
+  position: absolute;
+  left: 200px;
+  bottom: 420px;
+}
+
+.asset3 {
+  position: absolute;
+  left: 220px;
+  top: 200px;
+}
+
+.asset4 {
+  position: absolute;
+  left: 290px;
+  top: 250px;
+}
+
+.asset5 {
+  position: absolute;
+  left: 250px;
+  top: 30px;
+}
+
+.asset6 {
+  position: absolute;
+  left: 230px;
+  top: 100px;
+}
+
+.asset7 {
+  position: absolute;
+  left: 250px;
+  top: 300px;
+}
+
+.asset8 {
+  position: absolute;
+  left: 270px;
+  top: 70px;
+}
+
+.asset9 {
+  position: absolute;
+  left: 80px;
+  top: 20px;
+}
+
+.asset10 {
+  position: absolute;
+  left: 180px;
+  top: 50px;
+}
+
+.sect2-border {
+  grid-column: 1/-1;
+  z-index: 9;
+  margin: -12% 0;
+}
+
+.sect2-end-border {
+    grid-column: 1/-1;
+    z-index: 9;
+    margin:  0;
+}
+
+.about-sect2 {
+  grid-column: 1/-1;
+}
+
+.about-padding {
+  padding: 3vw 4vw;
+}
+.about-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em 4em;
+}
+.about-text h2 {
+  grid-column: 1/-1;
+}

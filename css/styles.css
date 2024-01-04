@@ -1,0 +1,123 @@
+/* Styles, fonts, colours, all of the aestethic things here */
+
+:root {
+  --main-bg-color: #f9fafa;
+  --main-text-color: #101112;
+  --blue-dark: #6184a0;
+  --blue-medium: #6fa0c7;
+  --blue-light: #a5bfd3;
+  --red-dark: #c05949;
+  --red-light: #b08781;
+  --grey: #d9d9d9;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/** global elements, such as header and footer **/
+
+.nav-links a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.nav-links a:link {
+  color: var(--red-dark);
+}
+
+.nav-links a:visited {
+  color: var(--red-dark);
+}
+
+.nav-links a:hover {
+  color: var(--blue-light);
+}
+
+.nav-links > a:active {
+  color: var(--red-light);
+}
+
+#dropdown {
+  box-shadow: 4px 6px var(--red-dark);
+}
+
+#dropdown a {
+  color: var(--main-bg-color);
+}
+
+#dropdown li:hover {
+  background: var(--blue-dark);
+}
+
+ul li ul {
+  background: var(--blue-light);
+}
+
+/** About page **/
+
+.img-about-01 {
+  width: 400px;
+  height: 100%;
+  transition: 0.5s ease-in;
+  filter: grayscale(0%);
+}
+
+.img-about-01:hover {
+  transition: 0.3s ease-out;
+  filter: grayscale(100%);
+}
+
+.underline {
+    filter: brightness(0) saturate(100%) invert(59%) sepia(17%) saturate(565%) hue-rotate(320deg) brightness(94%) contrast(86%); /* filter generated from css-color-filter*/
+}
+
+.asset1 {
+  fill: var(--blue-medium);
+}
+
+.asset2, .asset8 {
+  fill: var(--red-dark);
+}
+
+.asset3 {
+  fill: var(--red-light);
+}
+
+.asset4 {
+  fill: var(--blue-light);
+}
+
+.asset5, .asset9 {
+  fill: var(--red-light);
+}
+
+.asset6, .asset10 {
+  fill: var(--blue-medium);
+}
+
+.asset7 {
+  fill: var(--red-dark);
+}
+
+.sect2-border, .sect2-end-border {
+  fill: var(--blue-dark);
+}
+
+.about-sect2 {
+  background-color: var(--blue-dark);
+  color: var(--main-bg-color);
+}

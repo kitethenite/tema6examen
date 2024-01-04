@@ -1,0 +1,36 @@
+.name-animation {
+  animation: slide-in-left 0.5s ease-out;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-20vw);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.asset1, .asset3, .asset5, .asset8, .asset9 {
+  animation: assetspin1 3s linear infinite;
+}
+
+@keyframes assetspin1 {
+  0% {
+    rotate: -360deg;
+  }
+}
+
+.asset2, .asset4, .asset6, .asset7, .asset10 {
+  animation: assetspin2 2s linear infinite;
+}
+@keyframes assetspin2 {
+    0% {
+        rotate: 360deg;
+    }
+}
+
+
