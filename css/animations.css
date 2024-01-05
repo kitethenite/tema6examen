@@ -1,5 +1,203 @@
+/* Index page */
+
+/* .index-text > :nth-child(1) {
+  animation: slide-in-left 0.7s ease-out;
+}
+
+.index-text > :nth-child(2) {
+  animation: slide-up 1s backwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes slide-up {
+  0% {
+    translate: 0 100px;
+    opacity: 0;
+  }
+  100% {
+    translate: 0;
+  }
+}
+
+.index-text > :nth-child(3) {
+  animation: slide-down 1s backwards ease-out;
+  animation-delay: 0.6s;
+}
+
+@keyframes slide-down {
+  0% {
+    translate: 0 -110px;
+    opacity: 0;
+    scale: 4;
+  }
+} */
+
+.index-text > :nth-child(4) {
+  animation: nicole 0.8s backwards ease-out;
+  /* animation-delay: 0.6s; */
+}
+
+@keyframes nicole {
+  0% {
+    translate: 500px 0;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    translate: 0;
+  }
+}
+
+.index-text > :nth-child(5) {
+  animation: heywood 0.7s ease-out backwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes heywood {
+  0% {
+    translate: -200px 0;
+    opacity: 0;
+  }
+}
+
+.heywood-underline2 {
+  animation: underline-name 0.5s linear both;
+  animation-delay: 1.2s;
+}
+
+.heywood-underline {
+  animation: underline-name 1s linear both;
+  animation-delay: 1.8s;
+}
+
+
+@keyframes underline-name {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.svg-decorations > :nth-child(1) {
+  animation: decoration 8s linear infinite backwards;
+  animation-delay: 1s;
+  left: 2%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--blue-light);
+}
+
+.svg-decorations > :nth-child(2) {
+  animation: decoration 5s linear infinite backwards;
+  left: 20%;
+  width: 60px;
+  height: 60px;
+  background-color: var(--blue-medium);
+}
+
+.svg-decorations > :nth-child(3) {
+  animation: decoration 7s linear infinite backwards;
+  animation-delay: 1s;
+  left: 15%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--blue-dark);
+}
+
+.svg-decorations > :nth-child(4) {
+  animation: decoration 4s linear infinite backwards;
+  left: 60%;
+  width: 25px;
+  height: 25px;
+  background-color: var(--blue-medium);
+}
+
+.svg-decorations > :nth-child(5) {
+  animation: decoration 5s linear infinite backwards;
+  animation-delay: 1s;
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--blue-light);
+}
+
+
+.svg-decorations > :nth-child(6) {
+  animation: decoration 6s linear infinite backwards;
+  animation-delay: 1s;
+  left: 72%;
+  width: 40px;
+  height: 40px;
+  background-color: var(--blue-light);
+}
+
+
+.svg-decorations > :nth-child(7) {
+  animation: decoration 4s linear infinite backwards;
+  left: 80%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--blue-dark);
+}
+
+
+.svg-decorations > :nth-child(8) {
+  animation: decoration 7s linear infinite backwards;
+  animation-delay: 0.5s;
+  left: 86%;
+  width: 60px;
+  height: 60px;
+  background-color: var(--blue-medium);
+}
+
+
+.svg-decorations > :nth-child(9) {
+  animation: decoration 5.5s linear infinite backwards;
+  left: 91%;
+  width: 30px;
+  height: 30px;
+  background-color: var(--blue-light);
+}
+
+
+.svg-decorations > :nth-child(10) {
+  animation: decoration 6s linear infinite backwards;
+  animation-delay: 1s;
+  left: 40%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--blue-dark);
+}
+
+
+
+
+
+@keyframes decoration {
+  0% {
+    translate: 0 100%;
+  }
+
+  100% {
+    translate: 0 -500%;
+    border-radius: 50%;
+    rotate: 350deg;
+    opacity: 0;
+  }
+}
+
+/* About page */
+
 .name-animation {
-  animation: slide-in-left 0.5s ease-out;
+  animation: slide-in-left 0.5s ease-out backwards;
+  animation-delay: 0.3s;
 }
 
 @keyframes slide-in-left {
@@ -14,7 +212,26 @@
   }
 }
 
-.asset1, .asset3, .asset5, .asset8, .asset9 {
+.underline {
+  animation: underlineAnimation 1.2s linear backwards;
+  animation-delay: 1s;
+}
+
+@keyframes underlineAnimation {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.asset1,
+.asset3,
+.asset5,
+.asset8,
+.asset9 {
   animation: assetspin1 3s linear infinite;
 }
 
@@ -24,13 +241,29 @@
   }
 }
 
-.asset2, .asset4, .asset6, .asset7, .asset10 {
+.asset2,
+.asset4,
+.asset6,
+.asset7,
+.asset10 {
   animation: assetspin2 2s linear infinite;
 }
 @keyframes assetspin2 {
-    0% {
-        rotate: 360deg;
-    }
+  0% {
+    rotate: 360deg;
+  }
 }
 
+.about-laptop {
+  animation: laptop 4s ease-in-out infinite;
+}
 
+@keyframes laptop {
+  0% {
+    translate: 0;
+  }
+
+  50% {
+    translate: 0 -5%;
+  }
+}

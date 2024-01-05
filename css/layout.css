@@ -13,7 +13,7 @@
   grid-template-columns: 1fr 1fr;
 
   padding: 2%;
-  margin: 0 0 1vw;
+  margin: 0 0 4vw;
 }
 
 .logo {
@@ -23,12 +23,6 @@
 .nav-links {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  list-style: none;
-}
-
-.nav a,
-#dropdown {
-  text-decoration: none;
   list-style: none;
 }
 
@@ -55,6 +49,93 @@ ul li ul:hover {
   display: block;
 }
 
+/** index page **/
+
+.index-text {
+  display: grid;
+  grid-template-columns: auto;
+  position: relative;
+  justify-items: center;
+  align-items: center;
+  padding: 0 50%;
+}
+
+.index-text > :nth-child(1) {
+  position: relative;
+  left: -100%;
+  top: 30%;
+  z-index: 1;
+}
+
+.index-text > :nth-child(2) {
+  position: relative;
+  left: -103%;
+  z-index: 1;
+}
+
+.index-text > :nth-child(3) {
+  position: relative;
+  left: -65%;
+  top: -120%;
+}
+
+.index-text > :nth-child(4) {
+  position: relative;
+  left: -20%;
+  top: -180%;
+  z-index: 1;
+}
+
+.index-text > :nth-child(5) {
+  position: relative;
+  left: -20%;
+  top: -210%;
+  z-index: 1;
+}
+
+.heywood-underline {
+  height: 2px;
+  width: 12.5rem;
+  position: relative;
+  border-radius: 100px;
+  bottom: 10390%;
+  left: -0.5%;
+}
+
+.heywood-underline2 {
+  height: 2px;
+  width: 6rem;
+  position: relative;
+  border-radius: 100px;
+  bottom: 10500%;
+  right: 56%;
+}
+
+.svg-decorations {
+  position: relative;
+}
+
+.decoration {
+  position: absolute;
+  z-index: 1;
+}
+
+.index-sect2-border > * {
+  margin: -10px;
+  z-index: 9;
+  position: relative;
+}
+
+.index-sect2 {
+  padding: 3vw 4vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  z-index: 9;
+  position: relative;
+}
+
 /** about page **/
 .about-container {
   display: grid;
@@ -75,6 +156,7 @@ ul li ul:hover {
   grid-row: 1;
   align-self: center;
   font-size: calc(30px + 0.390625vw);
+  line-height: 170%;
 }
 
 .underline-name-container {
@@ -86,6 +168,7 @@ ul li ul:hover {
   grid-column: 1/-1;
   grid-row: 1;
 }
+
 .assets-container {
   position: relative;
   height: 100%;
@@ -153,16 +236,16 @@ ul li ul:hover {
   top: 50px;
 }
 
-.sect2-border {
+.about-sect2-border {
   grid-column: 1/-1;
   z-index: 9;
   margin: -12% 0;
 }
 
-.sect2-end-border {
-    grid-column: 1/-1;
-    z-index: 9;
-    margin:  0;
+.about-sect2-end-border {
+  grid-column: 1/-1;
+  z-index: 9;
+  margin: 0;
 }
 
 .about-sect2 {
@@ -172,11 +255,43 @@ ul li ul:hover {
 .about-padding {
   padding: 3vw 4vw;
 }
+
 .about-text {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2em 4em;
 }
+
 .about-text h2 {
   grid-column: 1/-1;
+}
+
+.about-text > :nth-child(3)
+{  
+ margin: 0 20% 20%;
+}
+
+.about-sect3 {
+  grid-column: 1/-1;
+  justify-items: center;
+  align-items: center;
+}
+
+/**** footer area ***/
+
+footer {
+z-index: 9;
+position: relative;
+
+}
+.footer-curve {
+  margin-bottom: -6px;
+}
+
+.footer-area {
+  padding: 3em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
 }

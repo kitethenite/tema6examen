@@ -35,6 +35,17 @@ p {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.nav a,
+#dropdown {
+  text-decoration: none;
+  list-style: none;
+}
+
+#active-index, #active-portfolio, #active-about  {
+font-style: italic;
+color: var(--blue-medium);
+}
+
 .nav-links a:link {
   color: var(--red-dark);
 }
@@ -67,6 +78,54 @@ ul li ul {
   background: var(--blue-light);
 }
 
+/** Index page **/
+
+.index-text > :nth-child(1) {
+  color: var(--red-light);
+  font-size: 80px;
+}
+
+.index-text > :nth-child(2) {
+  color: var(--red-light);
+  font-size: 80px;
+  font-weight: 300;
+}
+
+.index-text > :nth-child(3) {
+  color: var(--grey);
+  font-size: 90px;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.index-text > :nth-child(4) {
+  color: var(--red-dark);
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.index-text > :nth-child(5) {
+  color: var(--red-dark);
+  font-size: 80px;
+  font-weight: 300;
+}
+
+.heywood-underline, .heywood-underline2 {
+  background: var(--blue-light);
+}
+
+.index-sect2-border {
+  fill: var(--blue-dark);
+}
+
+.index-sect2 {
+  background-color: var(--blue-dark);
+  color: var(--main-bg-color);
+}
+
+.svg-decorations {
+  fill: var(--blue-light);
+}
 /** About page **/
 
 .img-about-01 {
@@ -82,14 +141,16 @@ ul li ul {
 }
 
 .underline {
-    filter: brightness(0) saturate(100%) invert(59%) sepia(17%) saturate(565%) hue-rotate(320deg) brightness(94%) contrast(86%); /* filter generated from css-color-filter*/
+  filter: brightness(0) saturate(100%) invert(59%) sepia(17%) saturate(565%)
+    hue-rotate(320deg) brightness(94%) contrast(86%); /* filter generated from css-color-filter*/
 }
 
 .asset1 {
   fill: var(--blue-medium);
 }
 
-.asset2, .asset8 {
+.asset2,
+.asset8 {
   fill: var(--red-dark);
 }
 
@@ -101,11 +162,13 @@ ul li ul {
   fill: var(--blue-light);
 }
 
-.asset5, .asset9 {
+.asset5,
+.asset9 {
   fill: var(--red-light);
 }
 
-.asset6, .asset10 {
+.asset6,
+.asset10 {
   fill: var(--blue-medium);
 }
 
@@ -113,11 +176,28 @@ ul li ul {
   fill: var(--red-dark);
 }
 
-.sect2-border, .sect2-end-border {
+.about-sect2-border,
+.about-sect2-end-border {
   fill: var(--blue-dark);
 }
 
 .about-sect2 {
+  background-color: var(--blue-dark);
+  color: var(--main-bg-color);
+}
+
+.about-laptop {
+width: auto;
+height: auto;
+}
+
+/*** footer area ***/
+
+.footer-curve {
+  fill: var(--blue-dark);
+}
+
+.footer-area {
   background-color: var(--blue-dark);
   color: var(--main-bg-color);
 }
