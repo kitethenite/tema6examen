@@ -127,8 +127,8 @@
     z-index: 1;
   }
 
-  .index-sect2-border > * {
-    margin: -10px;
+  .index-sect2-border {
+    margin: -10px 0;
     z-index: 9;
     position: relative;
   }
@@ -648,8 +648,9 @@
     z-index: 1;
   }
 
-  .index-sect2-border > * {
-    margin: -10px;
+  .index-sect2-border  {
+    margin: -10px 0;
+
     z-index: 9;
     position: relative;
   }
