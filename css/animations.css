@@ -39,16 +39,12 @@
 
 @keyframes nicole {
   0% {
-    translate: 500px 0;
+    transform: translateX(500px);
     opacity: 0;
   }
 
   40% {
     opacity: 0;
-  }
-
-  100% {
-    translate: 0;
   }
 }
 
@@ -59,7 +55,7 @@
 
 @keyframes heywood {
   0% {
-    translate: -200px 0;
+    transform: translate(-200px, 0);
     opacity: 0;
   }
 }
@@ -71,15 +67,14 @@
 
 .heywood-underline {
   animation: underline-name 1s linear both;
-  animation-delay: 1.8s;
+  animation-delay: 1.75s;
 }
-
 
 @keyframes underline-name {
   0% {
     clip-path: inset(0 100% 0 0);
   }
-  
+
   100% {
     clip-path: inset(0 0 0 0);
   }
@@ -128,7 +123,6 @@
   background-color: var(--blue-light);
 }
 
-
 .svg-decorations > :nth-child(6) {
   animation: decoration 6s linear infinite backwards;
   animation-delay: 1s;
@@ -138,7 +132,6 @@
   background-color: var(--blue-light);
 }
 
-
 .svg-decorations > :nth-child(7) {
   animation: decoration 4s linear infinite backwards;
   left: 80%;
@@ -146,7 +139,6 @@
   height: 20px;
   background-color: var(--blue-dark);
 }
-
 
 .svg-decorations > :nth-child(8) {
   animation: decoration 7s linear infinite backwards;
@@ -157,7 +149,6 @@
   background-color: var(--blue-medium);
 }
 
-
 .svg-decorations > :nth-child(9) {
   animation: decoration 5.5s linear infinite backwards;
   left: 91%;
@@ -165,7 +156,6 @@
   height: 30px;
   background-color: var(--blue-light);
 }
-
 
 .svg-decorations > :nth-child(10) {
   animation: decoration 6s linear infinite backwards;
@@ -175,10 +165,6 @@
   height: 20px;
   background-color: var(--blue-dark);
 }
-
-
-
-
 
 @keyframes decoration {
   0% {
@@ -192,6 +178,371 @@
     opacity: 0;
   }
 }
+
+/* Portfolio page */
+
+.bg-svg1 {
+  position: absolute;
+  width: 850px;
+  height: 500px;
+  left: -25%;
+  top: 75%;
+  z-index: 1;
+  animation: blue-cloud 5s infinite ease alternate;
+}
+
+@keyframes blue-cloud {
+  50% {
+    translate: 0 3%;
+  }
+}
+
+.animation-text-container {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 2em;
+  overflow: hidden;
+  height: 22px;
+}
+
+.animation-text-container div {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 17px;
+  animation: information 7s linear infinite;
+}
+
+.animation-text-container div div {
+  margin: 0 1em 1em 0.5em;
+}
+
+.basic-web {
+  color: var(--blue-dark);
+}
+
+.basic-uxui {
+  color: var(--red-dark);
+}
+
+.basic-animation {
+  color: var(--blue-dark);
+}
+
+.basic-content {
+  color: var(--red-dark);
+}
+
+@keyframes information {
+  0% {
+    transform: translateY(0);
+  }
+
+  15% {
+    transform: translateY(-176%);
+  }
+
+  25% {
+    transform: translateY(-176%);
+  }
+
+  31% {
+    transform: translateY(-269%);
+  }
+
+  37% {
+    transform: translateY(-259%);
+  }
+
+  39% {
+    transform: translateY(-265%);
+  }
+
+  47% {
+    transform: translateY(-265%);
+  }
+
+  52% {
+    transform: translateY(-275%);
+  }
+
+  59% {
+    transform: translateY(-78%);
+  }
+
+  65% {
+    transform: translateY(-92%);
+  }
+
+  69% {
+    transform: translateY(-88%);
+  }
+
+  79% {
+    transform: translateY(-88%);
+  }
+
+  85% {
+    transform: translateY(0);
+  }
+}
+
+/* .design-principles {
+  position: relative;
+  margin: 5em 0;
+}
+
+.design-principles > * {
+  position: absolute;
+}
+
+.design-principles > :nth-child(1) {
+  animation: design-l 0.6s linear forwards;
+  left: -80%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--blue-light);
+  opacity: 0;
+}
+
+.design-principles > :nth-child(2) {
+  animation: design-l 0.6s linear forwards;
+  left: -40%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--blue-medium);
+  opacity: 0;
+  top: -80%;
+  animation-delay: 0.1s;
+}
+
+.design-principles > :nth-child(3) {
+  animation: design-l 0.7s linear forwards;
+  left: 10%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--blue-dark);
+  opacity: 0;
+  top: -50%;
+  animation-delay: 0.2s;
+}
+
+.design-principles > :nth-child(4) {
+  animation: design-l 0.6s linear forwards;
+  left: -35%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--blue-dark);
+  opacity: 0;
+  top: 10%;
+  animation-delay: 0.3s;
+}
+
+.design-principles > :nth-child(5) {
+  animation: design-l 0.6s linear forwards;
+  left: -55%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--red-light);
+  opacity: 0;
+  top: 25%;
+  animation-delay: 0.2s;
+}
+
+.design-principles > :nth-child(6) {
+  animation: design-r 0.5s linear forwards;
+  right: -30%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--red-light);
+  opacity: 0;
+  top: -30%;
+  animation-delay: 0.1s;
+}
+
+.design-principles > :nth-child(7) {
+  animation: design-r 0.5s linear forwards;
+  right: -50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--blue-light);
+  opacity: 0;
+  top: -45%;
+  animation-delay: 0.1s;
+}
+
+.design-principles > :nth-child(8) {
+  animation: design-r 0.6s linear forwards;
+  right: 20%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--red-light);
+  opacity: 0;
+  animation-delay: 0.1s;
+}
+
+.design-principles > :nth-child(9) {
+  animation: design-r 0.7s linear forwards;
+  right: -34%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--red-light);
+  opacity: 0;
+  top: -50%;
+  animation-delay: 0.1s;
+}
+
+.design-principles > :nth-child(10) {
+  animation: design-r 0.5s linear forwards;
+  right: -1%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--blue-medium);
+  opacity: 0;
+  top: -30%;
+  animation-delay: 0.1s;
+}
+
+@keyframes design-l {
+  100% {
+    transform: translate(1000%, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes design-r {
+  100% {
+    transform: translate(-1000%, 0);
+    opacity: 1;
+  }
+}
+
+.ux-similarities {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.ux-similarities > * {
+  position: absolute;
+  animation: fade-in 2s ease-out forwards;
+  opacity: 0;
+}
+
+.ux-similarities > :nth-child(1) {
+  animation-delay: 0.3s;
+  left: 800%;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--blue-light);
+}
+
+.ux-similarities > :nth-child(2) {
+  animation-delay: 0.2s;
+  left: 700%;
+  top: 90%;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--blue-light);
+}
+
+.ux-similarities > :nth-child(3) {
+  animation-delay: 0.1s;
+  left: 300%;
+  top: 80%;
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: var(--blue-medium);
+}
+
+.ux-similarities > :nth-child(4) {
+  animation-delay: 0.3s;
+  left: 600%;
+  top: -24%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--red-dark);
+}
+
+.ux-similarities > :nth-child(5) {
+  animation-delay: 0.1s;
+  left: 650%;
+  top: 40%;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: var(--blue-dark);
+}
+
+.ux-similarities > :nth-child(6) {
+  animation-delay: 0.2s;
+  left: 850%;
+  top: 70%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--red-light);
+}
+
+.ux-similarities > :nth-child(7) {
+  animation-delay: 0.3s;
+  left: 450%;
+  top: 20%;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--blue-medium);
+}
+
+.ux-similarities > :nth-child(8) {
+  animation-delay: 0.1s;
+  left: 300%;
+  top: -10%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--blue-dark);
+}
+
+.ux-similarities > :nth-child(9) {
+  animation-delay: 0.2s;
+  left: 950%;
+  top: 30%;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: var(--blue-medium);
+}
+
+.ux-similarities > :nth-child(10) {
+  animation-delay: 0.3s;
+  left: 500%;
+  top: 60%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--red-dark);
+}
+
+@keyframes fade-in {
+  100% {
+    
+    opacity: 1;
+  }
+
+} */
 
 /* About page */
 
@@ -232,12 +583,19 @@
 .asset5,
 .asset8,
 .asset9 {
-  animation: assetspin1 3s linear infinite;
+  animation: assetspin1 5s linear infinite;
+  animation-delay: 0.8s;
+  opacity: 0;
 }
 
 @keyframes assetspin1 {
-  0% {
-    rotate: -360deg;
+  50% {
+    opacity: 1;
+   }
+ 
+  100% {
+    transform: rotate(-360deg);
+    opacity: 0;
   }
 }
 
@@ -246,11 +604,19 @@
 .asset6,
 .asset7,
 .asset10 {
-  animation: assetspin2 2s linear infinite;
+  animation: assetspin2 4s linear infinite;
+  animation-delay: 0.6s;
+  opacity: 0;
 }
+
 @keyframes assetspin2 {
-  0% {
-    rotate: 360deg;
+ 50% {
+  opacity: 1;
+ }
+ 
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
   }
 }
 
@@ -260,10 +626,22 @@
 
 @keyframes laptop {
   0% {
-    translate: 0;
+    transform: translateY(0);
   }
-
   50% {
-    translate: 0 -5%;
+    transform: translateY(-5%);
+  }
+}
+
+.book {
+  animation: book 2.5s alternate-reverse linear infinite;
+}
+
+@keyframes book {
+  0% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(30deg);
   }
 }

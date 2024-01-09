@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/animations.css" />
@@ -13,10 +13,7 @@
       <nav class="nav">
         <div class="logo-div">
           <a href="index.html">
-            <img
-              src="assets/logo.svg"
-              alt="logo-image, saying heyhey with blue colours."
-              class="logo"
+            <img src="img/logo.svg" alt="logo" class="logo"
           /></a>
         </div>
         <div id="nav-div">
@@ -25,19 +22,24 @@
             <li>
               <a href="portfolio.html" id="active-portfolio">Portfolio</a>
               <ul id="dropdown">
-                <li><a href="#">Module 2</a></li>
-                <li><a href="#">Module 3</a></li>
-                <li><a href="#">Module 4</a></li>
-                <li><a href="#">Module 5</a></li>
+                <li><a href="#web">Basic web</a></li>
+                <li><a href="#uxui">Basic UX/UI</a></li>
+                <li><a href="#animation">Basic animation</a></li>
+                <li><a href="#content">Basic content</a></li>
               </ul>
             </li>
             <li><a href="about.html">About</a></li>
           </ul>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
         </div>
       </nav>
     </header>
-    <main>
-      <div><h1>Portfolio</h1></div>
+    <main class="main-portfolio">
+      <h1>Portfolio</h1>
       <div class="animation-text-container">
         <p>Here you'll see more about</p>
         <div class="animation-text">
@@ -47,9 +49,191 @@
           <div class="information basic-content">basic content</div>
         </div>
       </div>
+      <div class="wrapper">
+        <div class="introduction">
+          <div class="text">
+          <h2>Introduction</h2>
+          <p>
+            During the first semester of Multimedia Design at Copenhagen School
+            of Design and Technology have I been introduced to the basics behind
+            front-end development and content creation. The main focus has been
+            on developing the fundamentals of HTML, CSS and very basic vanilla
+            JavaScript. Apart from that, have we also been taught various design
+            conventions and ways to develop your own creations, such as working
+            with crazy 8's, trunk test and a variety of different design sprint methods.
+          </p>
+          <p>This website is a part of my final examination in the first semester, but it's also a way to showcase my growth and skill-development throughout these couple of months. </p>
+        </div>
+        <div class="introduction-img"> 
+          <img src="img/crazy8.svg" alt="illustration of crazy 8 set-up" class="crazy8">
+        </div>
+         
+        </div>
+        <!-- <div class="design-p-text">
+          <div>Some UX principles:</div>
+          <div>Law of proximity</div>
+        </div>
+        <div class="ux-animations">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="design-p-text">
+          <div>Law of similarities</div>
+        </div>
+        <div class="ux-animations2">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div> -->
+  
+        <div class="basic-web-info" id="web">
+          <div class="text"><h2>Basic web</h2>  
+          <p>
+            During our first module, were we introduced to the absolute basics
+            of website-development. Most of the text, images and layout-plans were
+            already handed down to us from our teachers. Our job was to figure
+            out how to create a functional website, includnig all of the
+            assigned content, in the way that the layout plan had called for.
+          </p></div>
+          <div class="take-away">
+            <p>The main take-aways from this module:</p>
+          <ul>
+            <li>Troubleshooting</li>
+            <li>Searching for information online</li>
+            <li>Embracing problem-solving</li>
+          </ul></div>
+          <div class="portfolio-links">
+            <a
+              href="https://heyheywood.com/kea/02_web/01_website/website/index.html" target="_blank"
+              >Link to website</a>
+          </div>
+        </div>
+        <div class="bg-div">
+          <img src="assets/cloud02.svg" alt="" class="bg-svg1">
+        </div>
+        <div class="basic-uxui-info" id="uxui">
+          <div class="text">
+             <h2>Basic UX/UI</h2>
+          <p>
+            This was a really fun assignment, where we were introduced a whole
+            lot of various ways to brainstorm a design, how to put together a
+            functional prototype and to create and code the content. It truly
+            felt like a great fun exercise where you got to work with a project from start to finish. Out of all modules within this semester, I felt that this was the module where one learnt the value of going through various design sprints to push ones visual cues. 
+          </p>
+          </div>
+          <div class="uxui-img-container">
+            <img src="img/basic-uxui.webp" alt="screenshot" class="uxui-img">
+          </div>
+          <div class="portfolio-links">
+            <a
+              href="https://heyheywood.com/kea/03_ux/01_kodet_site/emnesite/index.html" target="_blank"
+              >Link to website</a
+            >
+          </div>
+          <div class="portfolio-links">
+            <a href="https://heyheywood.com/files/uxui-presentation.pdf" target="_blank"
+              >Link to the presentation</a
+            >
+          </div>
+          <div class="portfolio-links">
+            <a href="https://heyheywood.com/files/uxui-processdokumentation.pdf" target="_blank"
+              >Link to the process documentation</a
+            >
+          </div>
+          <div class="take-away">
+            <p>The main take-aways from this module:</p>
+          <ul>
+            <li>Putting time and effort in the design-process will improve the final product.</li>
+            <li>User-inputs are a valuable way to get out of your design-bubble and into the real world.</li>
+            <li>Having a finalised prototype of the website will save you a lot of time when coding.</li>
+          </ul></div>
+        </div>
+        <div class="basic-animation-info" id="animation">
+          <div class="text">
+            <h2>Basic animation</h2>
+          <p>
+            By far was this the most challenging module. JavaScript was
+            introduced to us, and the main project of this module was to develop
+            a simple game, with the help of writing JavaScript functions. It was
+            also the most rewarding project in terms of forcing oneself to
+            develop a much better understanding of CSS and how to communicate
+            between HTML, CSS and JS.
+          </p>
+          <p> In doing this project, we had to illustrate assets based on a specific style. I chose to analyse the style used in the game <em>Two dots</em>, illustrated by the British illustrator Owen Davey. </p></div>
+          
+          <div class="animation-screenshot-container">
+            <img src="img/basic-animation.webp" alt="screenshot" class="animation-screenshot">
+          </div>
+          <div class="animation-img">
+            <img src="img/pinkcat_angry.svg" alt="pink cat" class="cat-main cat"> 
+            <img src="img/pinkcat_happy.svg" alt="pink cat" class="cat-hover cat">
+          </div>
+          <div class="portfolio-links">
+            <a href="https://heyheywood.com/kea/04_animation/website/game.html" target="_blank"
+              >Link to the game</a
+            >
+          </div>
+          <div class="take-away">
+            <p>The main take-aways from this module:</p>
+          <ul>
+            <li>Developing the right way to think when writing JavaScript</li>
+            <li>Pushing through what felt like impossible tasks</li>
+            <li>Daring to experiment</li>
+          </ul>
+        </div>
+        </div>
+        <div class="basic-content-info" id="content">
+          <div class="text">
+          <h2>Basic content</h2>
+          <p>The last module before the exam was divided into two major parts. The first part introduced us to video-recording and editing. </p></div>
+
+          <div class="content-screenshot-container">
+            <img src="img/basic-content-video.webp" alt="screenshot" class="content-screenshot">
+          </div>
+          <div class="content-text2"><p> blabla</p></div>
+          <div class="content-screenshot-container2">
+            <img src="img/basiccontent2.webp" alt="screenshot" class="content-screenshot2">
+          </div>
+          <div class="content-text3">
+            <p> Text om verksamhet och grupparbete</p>
+          </div>
+          <div class="portfolio-links">
+            <a href="https://kitethenite.github.io/videosite/" target="_blank"
+              >Link to the interview website</a
+            >
+          </div>
+          <div class="portfolio-links">
+            <a href="https://velvety-palmier-013148.netlify.app/"
+             target="_blank">Link to the business website</a
+            >
+          </div>
+          <div class="take-away">
+            <p>The main take-away from this module is:</p>
+          <ul>
+            <li>Troubleshooting</li>
+            <li>Searching for information online</li>
+            <li>Embracing problem-solving</li>
+          </ul></div>
+        </div>
+      </div>
     </main>
     <footer></footer>
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
   </body>
-  <script src="js/script.js"></script>
-  <script src="js/animations.js"></script>
 </html>
