@@ -94,17 +94,15 @@ ul li ul {
   }
 
   #dropdown a {
-color: var(--blue-medium);
+    color: var(--blue-medium);
   }
 
   #dropdown a:hover {
     color: var(--red-light);
   }
 
-
   .nav-links a:link {
     color: var(--red-dark);
-
   }
 
   .nav-links a:visited {
@@ -175,6 +173,24 @@ color: var(--blue-medium);
   fill: var(--blue-light);
 }
 
+.index-sect2 a{
+color: var(--blue-dark);
+}
+
+.index-sect2:visited {
+  color: var(--blue-dark);
+}
+
+
+.index-link-about a:hover, .index-link-portfolio a:hover{
+ color: var(--red-dark);
+ transition: 0.2s;
+}
+
+
+
+
+
 /** Portfolio page **/
 
 .main-portfolio {
@@ -185,15 +201,15 @@ color: var(--blue-medium);
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: 1fr;
-justify-items: end;
-align-items: end;
-justify-content:end;
+  justify-items: end;
+  align-items: end;
+  justify-content: end;
 }
 
 .crazy8 {
-  width: 350px;
+  width: 300px;
   margin: auto;
-  justify-content:end;
+  justify-content: end;
 }
 
 .wrapper {
@@ -247,6 +263,10 @@ justify-content:end;
   opacity: 1;
 }
 
+#uxui > .text {
+  text-shadow: 1px 1px 1px var(--blue-dark);
+}
+
 .animation-screenshot {
   border-radius: 10px;
   transition: 0.5s ease;
@@ -285,11 +305,11 @@ justify-content:end;
 
 .content-screenshot:hover,
 .content-screenshot2:hover {
-scale: 1.1;
-overflow: hidden;
-transition: 0.7s ease-out;
-box-shadow: 4px 6px var(--red-dark);
-opacity: 1;
+  scale: 1.1;
+  overflow: hidden;
+  transition: 0.7s ease-out;
+  box-shadow: 4px 6px var(--red-dark);
+  opacity: 1;
 }
 
 /** About page **/
@@ -351,7 +371,14 @@ opacity: 1;
   height: auto;
 }
 
+.about-text {
+  line-height: 150%;
+}
 /*** footer area ***/
+
+footer {
+  font-size: 14px;
+}
 
 .footer-curve {
   fill: var(--blue-dark);
@@ -360,4 +387,9 @@ opacity: 1;
 .footer-area {
   background-color: var(--blue-dark);
   color: var(--main-bg-color);
+  line-height: 150%;
+}
+
+.li-in-bug {
+  filter: brightness(1000%)
 }

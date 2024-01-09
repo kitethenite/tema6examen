@@ -8,7 +8,7 @@ burger.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
 
-navlinks.forEach((link) => {
+navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     burger.classList.remove("active");
     nav.classList.remove("active");

@@ -181,15 +181,6 @@
 
 /* Portfolio page */
 
-.bg-svg1 {
-  position: absolute;
-  width: 850px;
-  height: 500px;
-  left: -25%;
-  top: 75%;
-  z-index: 1;
-  animation: blue-cloud 5s infinite ease alternate;
-}
 
 @keyframes blue-cloud {
   50% {
