@@ -83,7 +83,7 @@
 .svg-decorations > :nth-child(1) {
   animation: decoration 8s linear infinite backwards;
   animation-delay: 1s;
-  left: 2%;
+  left: 12%;
   width: 50px;
   height: 50px;
   background-color: var(--blue-light);
@@ -100,7 +100,7 @@
 .svg-decorations > :nth-child(3) {
   animation: decoration 7s linear infinite backwards;
   animation-delay: 1s;
-  left: 15%;
+  left: 16%;
   width: 20px;
   height: 20px;
   background-color: var(--blue-dark);
@@ -134,7 +134,7 @@
 
 .svg-decorations > :nth-child(7) {
   animation: decoration 4s linear infinite backwards;
-  left: 80%;
+  left: 76%;
   width: 20px;
   height: 20px;
   background-color: var(--blue-dark);
@@ -143,7 +143,7 @@
 .svg-decorations > :nth-child(8) {
   animation: decoration 7s linear infinite backwards;
   animation-delay: 0.5s;
-  left: 86%;
+  left: 80%;
   width: 60px;
   height: 60px;
   background-color: var(--blue-medium);
@@ -151,7 +151,7 @@
 
 .svg-decorations > :nth-child(9) {
   animation: decoration 5.5s linear infinite backwards;
-  left: 91%;
+  left: 82%;
   width: 30px;
   height: 30px;
   background-color: var(--blue-light);
