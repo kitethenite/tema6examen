@@ -232,7 +232,8 @@
   }
 
   .cat {
-    width: 80%;
+    width: 250px;
+    margin: auto;
   }
 
   #animation .take-away {
@@ -255,7 +256,7 @@
   .basic-uxui-info > .text {
     color: white;
     z-index: 2;
-    margin: 0 0 10em;
+    margin: 0 0 4em;
   }
 
   .uxui-img-container {
@@ -434,7 +435,6 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2em;
-    
   }
 
   .about-padding {
@@ -445,11 +445,11 @@
     grid-column: 1/2;
   }
 
-  .about-text{
+  .about-text {
     margin: 0 0 1em;
     line-height: 150%;
     max-width: 100%;
-  } 
+  }
 
   .about-text-1 {
     padding: 0 2em;
@@ -702,6 +702,7 @@
     justify-items: center;
     align-items: center;
     padding: 0 2em;
+    overflow: hidden;
   }
 
   .wrapper {
@@ -714,7 +715,7 @@
   }
 
   .wrapper > div {
-    padding: 2em 0 5em;
+    padding: 2em 0 10em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
@@ -731,7 +732,6 @@
     grid-column: 1/-1;
     width: auto;
     margin: auto;
-
   }
 
   .take-away {
@@ -751,9 +751,33 @@
     width: 850px;
     height: 500px;
     left: -25%;
-top: 10%;
+    top: 64%;
     z-index: 1;
     animation: blue-cloud 5s infinite ease alternate;
+  }
+
+  @media screen and (max-width: 570px) {
+    .bg-svg1 {
+      position: absolute;
+      width: 850px;
+      height: 500px;
+      left: -36%;
+      top: 69%;
+      z-index: 1;
+      animation: blue-cloud 5s infinite ease alternate;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .bg-svg1 {
+      position: absolute;
+      width: 850px;
+      height: 600px;
+      left: -71%;
+      top: 63%;
+      z-index: 1;
+      animation: blue-cloud 5s infinite ease alternate;
+    }
   }
 
   #animation .take-away {
@@ -776,7 +800,7 @@ top: 10%;
   .basic-uxui-info > .text {
     color: white;
     z-index: 2;
-    margin: 0 0 10em;
+    margin: 0 0 4em;
   }
 
   .uxui-img-container {
@@ -815,6 +839,8 @@ top: 10%;
 
   .animation-img {
     grid-column: 1/-1;
+    margin: auto;
+    max-width: 200px;
   }
 
   #animation > .take-away {
@@ -825,8 +851,7 @@ top: 10%;
     grid-row: 5;
     grid-column: 1/-1;
     margin: auto;
-    width: 100%;
-    padding: 0 2em;
+    width: 250px;
   }
 
   .cat-hover {
@@ -924,15 +949,14 @@ top: 10%;
     grid-template-columns: 2fr 1fr;
   }
 
-  .about-text{
+  .about-text {
     margin: 0 0 1em;
     line-height: 150%;
     max-width: 100%;
-  } 
+  }
   .about-text > h2 {
     padding-bottom: 1em;
   }
-
 
   .about-laptop {
     grid-column: 2/-1;
@@ -1023,7 +1047,6 @@ top: 10%;
     gap: 3em;
     padding: 7em 2em 3em;
     justify-items: center;
-   
   }
 
   .social-icons {

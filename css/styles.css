@@ -363,8 +363,8 @@ ul li ul {
 }
 
 .about-laptop {
-  width: auto;
-  height: auto;
+ margin: auto;
+  max-width: 300px;
 }
 
 .about-text {
