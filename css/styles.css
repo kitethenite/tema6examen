@@ -173,23 +173,19 @@ ul li ul {
   fill: var(--blue-light);
 }
 
-.index-sect2 a{
-color: var(--blue-dark);
+.index-sect2 a {
+  color: var(--blue-dark);
 }
 
 .index-sect2:visited {
   color: var(--blue-dark);
 }
 
-
-.index-link-about a:hover, .index-link-portfolio a:hover{
- color: var(--red-dark);
- transition: 0.2s;
+.index-link-about a:hover,
+.index-link-portfolio a:hover {
+  color: var(--red-dark);
+  transition: 0.2s;
 }
-
-
-
-
 
 /** Portfolio page **/
 
@@ -251,14 +247,14 @@ color: var(--blue-dark);
 
 .uxui-img {
   border-radius: 10px;
-  transition: 0.5s ease;
+  transition: 0.4s ease;
   opacity: 0.7;
 }
 
 .uxui-img:hover {
   scale: 1.1;
   overflow: hidden;
-  transition: 0.7s ease-out;
+  transition: 0.3s ease-out;
   box-shadow: 4px 6px var(--red-dark);
   opacity: 1;
 }
@@ -377,7 +373,7 @@ color: var(--blue-dark);
 /*** footer area ***/
 
 footer {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .footer-curve {
@@ -391,5 +387,5 @@ footer {
 }
 
 .li-in-bug {
-  filter: brightness(1000%)
+  filter: brightness(1000%);
 }

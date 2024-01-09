@@ -625,7 +625,7 @@
 }
 
 .book {
-  animation: book 2.5s alternate-reverse linear infinite;
+  animation: book 2.5s alternate-reverse ease infinite;
 }
 
 @keyframes book {
@@ -633,6 +633,6 @@
     transform: rotate(-10deg);
   }
   100% {
-    transform: rotate(30deg);
+    transform: rotate(10deg);
   }
 }
