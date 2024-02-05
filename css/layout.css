@@ -234,6 +234,7 @@
   .cat {
     width: 250px;
     margin: auto;
+    
   }
 
   #animation .take-away {
@@ -268,6 +269,7 @@
   #uxui > .take-away {
     grid-row: 3/7;
   }
+  
   .bg-svg1 {
     position: absolute;
     width: 850px;
